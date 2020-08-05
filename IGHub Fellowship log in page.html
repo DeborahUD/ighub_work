@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Your Art museum login</title>
+    <style>
+        *{
+            padding: 0;
+        }
+        body{
+            background: #e7e1e0 url(bg_image.png) no-repeat fixed center top; filter: blur(0.7px);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            max-width: 310px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: rgba(231, 108, 108, 0.1);
+        }
+        .login{
+            max-width: 250px;
+            margin: auto;
+        }
+        h1{
+            text-transform: uppercase;
+            color: lavenderblush;
+            font-size: 30pt;
+            width: 200px;
+            padding: 0;
+            margin: 0;
+        }
+        p:first-of-type{
+            color:white;
+            width: 200px;
+            font-weight: 600;
+        }
+        ::placeholder{
+            color: black;
+            font-weight: 500;
+        }
+        input{
+            width: 93%;
+            border: none;
+            border-bottom: 2px solid rosybrown;
+            height: 20px;
+            padding: 9px;
+        }
+        input[type=email]:focus{
+            border: 2px solid transparent;
+        }
+        input[type=button]{
+            height:40px;
+            width: 100%;
+            background-color: tomato;
+            margin-top: 10px;
+            border-bottom: none;
+            color: whitesmoke;
+            font-weight: 600;
+        }
+        input[type=password]+p a{
+            float: right;
+            font-size: 12px;
+            color:white;
+        }
+        a[href^="#"]{
+            color: rgb(226, 234, 236);
+            font-weight: 600;
+            background-color: rgba(71, 48, 223, 0.938);
+            text-decoration: none;
+        }
+        input[type=button]+p{
+            color: rgb(240, 240, 229);
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <i class="fa fa-wifi" aria-hidden="true"></i>
+            <div class="login">
+                <h1>your art museum</h1>
+                <p>151 3rd st <br>San Francisco CA 94103</p>
+                <input type="email" name="email" id="email" placeholder="Email address">
+                <input type="password" name="password" id="password" placeholder="password">
+                <p><a href="">Forgot password</a></p>
+                <input type="button" value="login">
+                <p class="acc">Dont have an account? <a href="#">Sign up</a></p>
+            </div> 
+        </div>
+    
+    </body>
+
+</html> 
